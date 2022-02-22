@@ -2,6 +2,7 @@ defmodule Blitz do
   @moduledoc """
   Documentation for `Blitz`.
   """
+  require Logger
   alias Blitz.Roit.Api
 
   @default_region "NA1"

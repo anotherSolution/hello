@@ -61,6 +61,7 @@ defmodule Blitz.Roit.Api do
           }
         }
   """
+
   def get_account_by_name(name, region \\ @default_region) do
     path = "/lol/summoner/v4/summoners/by-name/#{name}"
     path |> api_url(region) |> Client.get()
